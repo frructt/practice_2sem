@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(images/play.jpg);
+}
+
+h1 {
+	font-size: 54pt;
+
+	text-align: center;
+
+	color: #d9534f;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 24pt;
+
+	color: #96ceb4;
+	font-weight: 600;
+
+	display: block;
+	background-color: #d9534f;
+	padding: 25px 50px;
+}
+
+a:hover {
+	color: #d9534f;
+	background-color: #96ceb4;
+
+	transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	max-width: 800px;
+	text-align: center;
+	padding: 10% 50%;
+}
+
+.student {
+	margin-left: 200px;
+}
