@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Студент</title>
+
+	<link rel="stylesheet" href="student.css">
+	<script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+	
+	<div id = "app">
+		<nav>
+			<transition name="fade" mode="out-in">
+				<p class="material-icons menu" v-if="!show" @click="show = !show" key = "menu">Линал</p>
+				<p class="material-icons clear" v-else @click="show = !show" key="clear">Линал</p>
+			</transition>
+			<transition name="fade">
+				<ul v-if="show">
+					<li v-for="item in items">{{ item }}</li>
+				</ul>
+			</transition>
+
+		</nav>
+	</div>
+
+	<div id="app2">
+		<nav>
+			<transition name="fade" mode="out-in">
+				<p class="material-icons menu" v-if="!show" @click="show = !show" key = "menu">Матан</p>
+				<p class="material-icons clear" v-else @click="show = !show" key="clear">Матан</p>
+			</transition>
+			<transition name="fade"	>
+				<ul v-if="show">
+					<li v-for="item in items">{{ item }}</li>
+				</ul>
+			</transition>
+		</nav>
+	</div>
+	
+	<script src="scripts/student.js"></script>
+
+</body>
+</html>
