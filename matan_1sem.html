@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Матан 1 сем</title>
+
+	<link rel="stylesheet" href="matan_1sem.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	
+	<div class="main-container">
+		<div id="app">
+			
+			<div class="quastion">
+				<p><b>Quastion 1 here</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one" value="0" v-model.number="picked[index]" type="number">
+					<label for="one">answer 1 here</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two" value="1" v-model.number="picked[index]" type="number">
+					<label for="two">answer 2 here</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three" value="2" v-model.number="picked[index]" type="number">
+					<label for="three">answer 3 here</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four" value="3" v-model.number="picked[index]" type="number">
+					<label for="four">answer 4 here</label>
+				</div>
+				<br>
+				<br>
+				<span>Выбрано: {{ picked[index] }}</span>
+			</div>
+
+			<div class="quastion">
+				<p><b>Quastion 2 here</b></p>
+			</div>
+			<div class="answer">
+
+				<div class="a">
+					<input type="radio" id="one2" value="0" v-model.number="picked[index+1]" type="number">
+					<label for="one2">answer 2.1 here</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two2" value="1" v-model.number="picked[index+1]" type="number">
+					<label for="two2">answer 2.2 here</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three2" value="2" v-model.number="picked[index+1]" type="number">
+					<label for="three2">answer 2.3 here</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four2" value="3" v-model.number="picked[index+1]" type="number">
+					<label for="four2">answer 2.4 here</label>
+				</div>
+				<br>
+				<br>
+				<span>Выбрано: {{ picked[index+1] }}</span>
+			</div>
+			<span>Все выбранные варианты ответов: {{ picked }}</span>
+			<!-- <span>result: {{ result[index] = picked[index] == correct_picked[index] }}</span> -->
+			<span>result: {{ result }}</span>
+			<button v-on:click="get">result</button>
+
+		</div>
+	</div>
+	
+	<script src="scripts/matan_1sem.js"></script>
+
+</body>
+</html>
