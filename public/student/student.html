@@ -46,18 +46,10 @@
 	  </transition>
 	</script>
 
-	<!-- app -->
-	<div id="appModel">
-		<!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
-		  <!-- use the modal component, pass in the prop -->
+	<!-- <div id="appModel">
 			
 
 		<modal v-if="showModal" @close="showModal = false">
-		    <!--
-		      you can use custom content here to overwrite
-		      default content
-		    -->
-			
 			
 			<h3 slot="header">Введите данные</h3>
 			<div slot = "body">
@@ -65,7 +57,6 @@
 				<form @submit="checkForm" action="/something" method="post" novalidate="true">
 
 				<p v-if="errors.length">
-					<!-- <b>Please correct the following error(s):</b> -->
 					<ul>
 						<li v-for="error in errors">{{ error }}</li>
 					</ul>
@@ -126,7 +117,7 @@
 		</modal>
 
 
-	</div>
+	</div> -->
 
 	<div id = "app">
 		<nav>
@@ -136,7 +127,7 @@
 			</transition>
 			<transition name="fade">
 				<ul v-if="show">
-					<li><a href="../in_progress.html">1 сем</a></li>
+					<li><a href="linal_1sem/linal_1sem.html">1 сем</a></li>
 					<!-- <li><a href="linal_2sem.html">2 сем</a></li> -->
 				</ul>
 			</transition>
