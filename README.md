@@ -1,20 +1,20 @@
-# Летняя парктика на 1 курсе. 
+# Summer Practice in the First Year. 
 
-## Описание
-Web-платформа по тестированию студентов.
+## Description
+Web-platform for testing students.
 
-  ### Фронт - html/css/vuejs
+  ### Front-end - html/css/vuejs
 
-  ### Бэк - nginx + nodejs
+  ### Back-end - nginx + nodejs
 
-## Для того, чтобы запустить:
+## To deploy:
 
-#### Установить Node.js
+#### Install Node.js
   ```
   sudo apt-get install nodejs
   ```
-#### Запустить сервер
+#### Deploy Server
   ```
   node index.js
   ```
-#### Зайти на localhost:8080
+#### Got to localhost:8080
