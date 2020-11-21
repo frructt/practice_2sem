@@ -1,0 +1,171 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Матан 1 сем</title>
+
+	<link rel="stylesheet" href="linal_1sem.css">
+	<script src="https://unpkg.com/vue"></script>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+	  		tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+</head>
+<body>
+	
+	<div class="main-container">
+
+		<h1>Лин Алгебра, 1 семестр</h1>
+		<div class="button">
+			<a href="../../index.html">Вернуться на главную</a>
+		</div>
+
+		<div id="app">
+			
+			<div class="quastion">
+				<p><b>$$\begin{vmatrix} 3 & -5 & 4 & 2\\ 5 & -4 & 7 & 3\\ 5 & -9 & 8 & 4\\ 3 & 2 & -5 & -3 \end{vmatrix} = ?$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one" value="0" v-model.number="picked[index]" type="number">
+					<label for="one">$$-14$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two" value="1" v-model.number="picked[index]" type="number">
+					<label for="two">$$-40$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three" value="2" v-model.number="picked[index]" type="number">
+					<label for="three">$$-4$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four" value="3" v-model.number="picked[index]" type="number">
+					<label for="four">$$4$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$X \cdot \begin{pmatrix} 4 & -9\\ -2 & 5 \end{pmatrix} = \begin{pmatrix} 2 & -3\\ -1 & 8\\ 5 & 4 \end{pmatrix}$$
+				</b></p>
+			</div>
+			<div class="answer">
+
+				<div class="a">
+					<input type="radio" id="one2" value="0" v-model.number="picked[index+1]" type="number">
+					<label for="one2">$$X = \begin{pmatrix} 2 & -3\\ \frac{11}{2} & \frac{33}{2}\\ \frac{23}{2} & \frac{61}{2} \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two2" value="1" v-model.number="picked[index+1]" type="number">
+					<label for="two2">$$X = \begin{pmatrix} 2 & -3\\ \frac{11}{2} & \frac{23}{2}\\ \frac{33}{2} & \frac{61}{2} \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three2" value="2" v-model.number="picked[index+1]" type="number">
+					<label for="three2">$$X = \begin{pmatrix} 2 & -3\\ \frac{61}{2} & \frac{23}{2}\\ \frac{33}{2} & \frac{11}{2} \end{pmatrix}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four2" value="3" v-model.number="picked[index+1]" type="number">
+					<label for="four2">$$X = \begin{pmatrix} -3 & 2\\ \frac{11}{2} & \frac{23}{2}\\ \frac{33}{2} & \frac{61}{2} \end{pmatrix}$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index+1] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$A = \begin{pmatrix} 1 & 2 & -1\\ 3 & 0 & 2\\ 4 & -2 & 5 \end{pmatrix}$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one3" value="0" v-model.number="picked[index+2]" type="number">
+					<label for="one3">$$A^{-1} = -\frac{1}{4} \begin{pmatrix} 4 & -8 & 4\\ -7 & 9 & -5\\ -6 & 10 & -6 \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two3" value="1" v-model.number="picked[index+2]" type="number">
+					<label for="two3">$$A^{-1} = \begin{pmatrix} 4 & -8 & 4\\ -7 & 9 & -5\\ -6 & 10 & -6 \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three3" value="2" v-model.number="picked[index+2]" type="number">
+					<label for="three3">$$A^{-1} = -\begin{pmatrix} 4 & -8 & 4\\ -7 & 9 & -5\\ -6 & 10 & -6 \end{pmatrix}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four3" value="3" v-model.number="picked[index+2]" type="number">
+					<label for="four3">$$A^{-1} = -\frac{1}{4} \begin{pmatrix} -8 & 4 & 4\\ -7 & 9 & -5\\ -6 & 10 & -6 \end{pmatrix}$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index_2] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$\begin{pmatrix} 1 & -1\\ 0 & 2 \end{pmatrix} X \begin{pmatrix} 1 & 2\\ 3 & 4 \end{pmatrix} = \begin{pmatrix} 1 & 2\\ 1 & -1 \end{pmatrix}$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one4" value="0" v-model.number="picked[index+3]" type="number">
+					<label for="one4">$$X = \begin{pmatrix} \frac{3}{4} & -\frac{3}{4}\\ \frac{7}{4} & -\frac{3}{4} \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two4" value="1" v-model.number="picked[index+3]" type="number">
+					<label for="two4">$$X = \begin{pmatrix} -\frac{7}{4} & \frac{3}{4}\\ -\frac{3}{4} & \frac{3}{4} \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three4" value="2" v-model.number="picked[index+3]" type="number">
+					<label for="three4">$$X = \begin{pmatrix} \frac{3}{4} & -\frac{3}{4}\\ -\frac{3}{4} & \frac{7}{4} \end{pmatrix}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four4" value="3" v-model.number="picked[index+3]" type="number">
+					<label for="four4">$$X = \begin{pmatrix} -\frac{3}{4} & \frac{3}{4}\\ -\frac{7}{4} & \frac{3}{4} \end{pmatrix}$$</label>
+				</div>
+				<!-- <br> -->
+				<!-- <br> -->
+				<!-- <span>Выбрано: {{ picked[index+3] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$C = -8\begin{pmatrix} 1 & 2\\ -3 & 4\\ 5 & -7 \end{pmatrix} + \begin{pmatrix} 4 & -3 & 0\\ 8 & -1 & 2 \end{pmatrix}^{T}$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one5" value="0" v-model.number="picked[index+4]" type="number">
+					<label for="one5">$$\begin{pmatrix} 4 & 8\\ 21 & -33\\ -40 & 58 \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two5" value="1" v-model.number="picked[index+4]" type="number">
+					<label for="two5">$$\begin{pmatrix} -8 & -4\\ -33 & 21\\ 58 & -40 \end{pmatrix}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three5" value="2" v-model.number="picked[index+4]" type="number">
+					<label for="three5">$$\begin{pmatrix} 4 & 8\\ -21 & 33\\ 40 & -58 \end{pmatrix}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four5" value="3" v-model.number="picked[index+4]" type="number">
+					<label for="four5">$$\begin{pmatrix} -4 & -8\\ 21 & -33\\ -40 & 58 \end{pmatrix}$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index+4] }}</span> -->
+			</div>
+
+			<!-- <span>Все выбранные варианты ответов: {{ picked }}</span> -->
+			<!-- <span>result: {{ result[index] = picked[index] == correct_picked[index] }}</span> -->
+			<!-- <span>result: {{ result }}</span> -->
+			<button v-on:click="get">result</button>
+
+		</div>
+	</div>
+	
+	<script src="linal_1sem.js"></script>
+
+</body>
+</html>

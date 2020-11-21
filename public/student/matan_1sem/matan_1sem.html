@@ -1,0 +1,173 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Матан 1 сем</title>
+
+	<link rel="stylesheet" href="matan_1sem.css">
+	<script src="https://unpkg.com/vue"></script>
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+	  		tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+</head>
+<body>
+	
+	<div class="main-container">
+
+		<h1>Мат анализ, 1 семестр</h1>
+		<div class="button">
+			<a href="../../index.html">Вернуться на главную</a>
+		</div>
+
+		<div id="app">
+			
+			<div class="quastion">
+				<p><b>$$\lim_{x \to 0}\frac{x^2 - 3}{5x^2 + 3x + 2}
+$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one" value="0" v-model.number="picked[index]" type="number">
+					<label for="one">$$-\frac{2}{3}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two" value="1" v-model.number="picked[index]" type="number">
+					<label for="two">$$-\frac{3}{2}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three" value="2" v-model.number="picked[index]" type="number">
+					<label for="three">$$\frac{3}{2}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four" value="3" v-model.number="picked[index]" type="number">
+					<label for="four">$$2$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$\lim_{x \to \infty}\frac{\sqrt{4x^4 - 1} - 2}{3x^2 - x - 1}$$
+</b></p>
+			</div>
+			<div class="answer">
+
+				<div class="a">
+					<input type="radio" id="one2" value="0" v-model.number="picked[index+1]" type="number">
+					<label for="one2">$$-2$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two2" value="1" v-model.number="picked[index+1]" type="number">
+					<label for="two2">$$\frac{3}{2}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three2" value="2" v-model.number="picked[index+1]" type="number">
+					<label for="three2">$$-\frac{2}{3}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four2" value="3" v-model.number="picked[index+1]" type="number">
+					<label for="four2">$$\frac{2}{3}$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index+1] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$\lim_{x \to \infty}\frac{\sqrt{x^2 + 16} - 4}{\sqrt{x^2 + 25} - 5}
+$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one3" value="0" v-model.number="picked[index+2]" type="number">
+					<label for="one3">$$-\frac{5}{4}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two3" value="1" v-model.number="picked[index+2]" type="number">
+					<label for="two3">$$\frac{5}{4}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three3" value="2" v-model.number="picked[index+2]" type="number">
+					<label for="three3">$$\frac{4}{5}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four3" value="3" v-model.number="picked[index+2]" type="number">
+					<label for="four3">$$-1$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index_2] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$\lim_{x \to \infty}(\sqrt{x^2 + x} - \sqrt{x^2 - 2x})$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one4" value="0" v-model.number="picked[index+3]" type="number">
+					<label for="one4">$$\frac{3}{2}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two4" value="1" v-model.number="picked[index+3]" type="number">
+					<label for="two4">$$\frac{2}{3}$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three4" value="2" v-model.number="picked[index+3]" type="number">
+					<label for="three4">$$-\frac{3}{2}$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four4" value="3" v-model.number="picked[index+3]" type="number">
+					<label for="four4">$$-1$$</label>
+				</div>
+				<!-- <br> -->
+				<!-- <br> -->
+				<!-- <span>Выбрано: {{ picked[index+3] }}</span> -->
+			</div>
+
+			<div class="quastion">
+				<p><b>$$\lim_{x \to \infty}\left(\frac{3x + 2}{1 + 3x}\right )^{3x}$$</b></p>
+			</div>
+			<div class="answer">
+				<div class="a">
+					<input type="radio" id="one5" value="0" v-model.number="picked[index+4]" type="number">
+					<label for="one5">$$1$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="two5" value="1" v-model.number="picked[index+4]" type="number">
+					<label for="two5">$$2$$</label>
+				</div>
+				<div class="a">
+					<input type="radio" id="three5" value="2" v-model.number="picked[index+4]" type="number">
+					<label for="three5">$$e$$</label>
+				</div>
+
+				<div class="a">
+					<input type="radio" id="four5" value="3" v-model.number="picked[index+4]" type="number">
+					<label for="four5">$$e^2$$</label>
+				</div>
+				<!-- <br>
+				<br>
+				<span>Выбрано: {{ picked[index+4] }}</span> -->
+			</div>
+
+			<!-- <span>Все выбранные варианты ответов: {{ picked }}</span> -->
+			<!-- <span>result: {{ result[index] = picked[index] == correct_picked[index] }}</span> -->
+			<!-- <span>result: {{ result }}</span> -->
+			<button v-on:click="get">result</button>
+
+		</div>
+	</div>
+	
+	<script src="matan_1sem.js"></script>
+
+</body>
+</html>
